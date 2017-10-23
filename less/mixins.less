@@ -1,0 +1,7 @@
+.column-restrictor-mixin(@limit) {
+    @calculated-limit: @limit + 1;
+
+    [class*='col-']:nth-child(n+@{calculated-limit}) {
+        display: none !important;
+    }
+}

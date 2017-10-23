@@ -1,0 +1,193 @@
+// |--------------------------------------------------------------------------
+// | Column restrictor
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .restrict-columns-1
+// | - .restrict-columns-2
+// | - .restrict-columns-3
+// | - .restrict-columns-4
+// | - .restrict-columns-5
+// | - .restrict-columns-6
+// |
+// | - .restrict-columns-xs-1
+// | - .restrict-columns-xs-2
+// | - .restrict-columns-xs-3
+// | - .restrict-columns-xs-4
+// | - .restrict-columns-xs-5
+// | - .restrict-columns-xs-6
+// |
+// | - .restrict-columns-sm-1
+// | - .restrict-columns-sm-2
+// | - .restrict-columns-sm-3
+// | - .restrict-columns-sm-4
+// | - .restrict-columns-sm-5
+// | - .restrict-columns-sm-6
+// |
+// | - .restrict-columns-md-1
+// | - .restrict-columns-md-2
+// | - .restrict-columns-md-3
+// | - .restrict-columns-md-4
+// | - .restrict-columns-md-5
+// | - .restrict-columns-md-6
+// |
+// | - .restrict-columns-lg-1
+// | - .restrict-columns-lg-2
+// | - .restrict-columns-lg-3
+// | - .restrict-columns-lg-4
+// | - .restrict-columns-lg-5
+// | - .restrict-columns-lg-6
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+@import "variables";
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@import "mixins";
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.restrict-columns-1 {
+  @include column-restrictor-mixin(1);
+}
+.restrict-columns-2 {
+  @include column-restrictor-mixin(2);
+}
+.restrict-columns-3 {
+  @include column-restrictor-mixin(3);
+}
+.restrict-columns-4 {
+  @include column-restrictor-mixin(4);
+}
+.restrict-columns-5 {
+  @include column-restrictor-mixin(5);
+}
+.restrict-columns-6 {
+  @include column-restrictor-mixin(6);
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {
+
+  .restrict-columns-xs-1 {
+    @include column-restrictor-mixin(1);
+  }
+  .restrict-columns-xs-2 {
+    @include column-restrictor-mixin(2);
+  }
+  .restrict-columns-xs-3 {
+    @include column-restrictor-mixin(3);
+  }
+  .restrict-columns-xs-4 {
+    @include column-restrictor-mixin(4);
+  }
+  .restrict-columns-xs-5 {
+    @include column-restrictor-mixin(5);
+  }
+  .restrict-columns-xs-6 {
+    @include column-restrictor-mixin(6);
+  }
+}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {
+
+  .restrict-columns-sm-1 {
+    @include column-restrictor-mixin(1);
+  }
+  .restrict-columns-sm-2 {
+    @include column-restrictor-mixin(2);
+  }
+  .restrict-columns-sm-3 {
+    @include column-restrictor-mixin(3);
+  }
+  .restrict-columns-sm-4 {
+    @include column-restrictor-mixin(4);
+  }
+  .restrict-columns-sm-5 {
+    @include column-restrictor-mixin(5);
+  }
+  .restrict-columns-sm-6 {
+    @include column-restrictor-mixin(6);
+  }
+}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {
+
+  .restrict-columns-md-1 {
+    @include column-restrictor-mixin(1);
+  }
+  .restrict-columns-md-2 {
+    @include column-restrictor-mixin(2);
+  }
+  .restrict-columns-md-3 {
+    @include column-restrictor-mixin(3);
+  }
+  .restrict-columns-md-4 {
+    @include column-restrictor-mixin(4);
+  }
+  .restrict-columns-md-5 {
+    @include column-restrictor-mixin(5);
+  }
+  .restrict-columns-md-6 {
+    @include column-restrictor-mixin(6);
+  }
+}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {
+
+  .restrict-columns-lg-1 {
+    @include column-restrictor-mixin(1);
+  }
+  .restrict-columns-lg-2 {
+    @include column-restrictor-mixin(2);
+  }
+  .restrict-columns-lg-3 {
+    @include column-restrictor-mixin(3);
+  }
+  .restrict-columns-lg-4 {
+    @include column-restrictor-mixin(4);
+  }
+  .restrict-columns-lg-5 {
+    @include column-restrictor-mixin(5);
+  }
+  .restrict-columns-lg-6 {
+    @include column-restrictor-mixin(6);
+  }
+}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
