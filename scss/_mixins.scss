@@ -1,7 +1,13 @@
-@mixin column-restrictor-mixin($limit) {
-    $calculated-limit: $limit + 1;
+@mixin column-restrictor-mixin($class, $i: 1) {
 
-    [class*='col-']:nth-child(n+#{$calculated-limit}) {
+  @for $i from 0 through $column-restrictor-total-columns {
+    $calculated-limit: $i + 1;
+
+    .restrict-columns-#{$class}-#{$i} {
+
+      [class*="col-"]:nth-child(n+#{$calculated-limit}) {
         display: none !important;
+      }
     }
+  }
 }

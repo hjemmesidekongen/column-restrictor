@@ -1,7 +1,7 @@
 {
   "name": "column-restrictor",
-  "version": "1.0.0",
-  "description": "Easy-to-use restriction for column.",
+  "version": "1.0.1",
+  "description": "For limiting the number of cols displayed in different screen sizes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
